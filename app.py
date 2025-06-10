@@ -16,7 +16,7 @@ st.markdown("Upload an image to check for anomalies.")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 if uploaded_file is not None:
     image = Image.open(uploaded_file).convert("RGB")
-    st.image(image, caption='Uploaded Image', use_container_width=True)
+    st.image(image, caption='Uploaded Image')
 
     img = image.resize((224, 224))
     img_array = np.expand_dims(np.array(img) / 255.0, axis=0)
