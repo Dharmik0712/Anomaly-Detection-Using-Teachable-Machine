@@ -30,7 +30,7 @@ if uploaded_file is not None:
 
 
 st.markdown("---")
-st.header("🎥 Real-Time Anomaly Detection (Bonus)")
+st.header("🎥 Real-Time Anomaly Detection")
 
 if st.button("Start Camera"):
     cap = cv2.VideoCapture(0)
